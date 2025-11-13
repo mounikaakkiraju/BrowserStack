@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-13T22:42:38 IST" name="CrossBrowserSequentialSuite" finished-at="2025-11-13T22:47:32 IST" duration-ms="293638">
+    <groups>
+    </groups>
+    <test started-at="2025-11-13T22:42:38 IST" name="ChromeTest" finished-at="2025-11-13T22:45:54 IST" duration-ms="195358">
+      <class name="Assessment.TestCase">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Assessment.TestCase@5a59ca5e]" started-at="2025-11-13T22:42:38 IST" name="setUp" finished-at="2025-11-13T22:42:41 IST" duration-ms="3059" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="elPaisArticleScraper()[pri:0, instance:Assessment.TestCase@5a59ca5e]" started-at="2025-11-13T22:42:42 IST" name="elPaisArticleScraper" finished-at="2025-11-13T22:45:53 IST" duration-ms="191732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elPaisArticleScraper -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assessment.TestCase@5a59ca5e]" started-at="2025-11-13T22:45:53 IST" name="tearDown" finished-at="2025-11-13T22:45:54 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Assessment.TestCase -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-11-13T22:45:54 IST" name="FirefoxTest" finished-at="2025-11-13T22:47:32 IST" duration-ms="98179">
+      <class name="Assessment.TestCase">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Assessment.TestCase@50378a4]" started-at="2025-11-13T22:45:54 IST" name="setUp" finished-at="2025-11-13T22:45:59 IST" duration-ms="5366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="elPaisArticleScraper()[pri:0, instance:Assessment.TestCase@50378a4]" started-at="2025-11-13T22:45:59 IST" name="elPaisArticleScraper" finished-at="2025-11-13T22:47:28 IST" duration-ms="89237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elPaisArticleScraper -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assessment.TestCase@50378a4]" started-at="2025-11-13T22:47:28 IST" name="tearDown" finished-at="2025-11-13T22:47:32 IST" duration-ms="3556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Assessment.TestCase -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2025-11-13T22:47:32 IST" name="EdgeTest" finished-at="2025-11-13T22:47:32 IST" duration-ms="24">
+      <class name="Assessment.TestCase">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Assessment.TestCase@79207381]" started-at="2025-11-13T22:47:32 IST" name="setUp" finished-at="2025-11-13T22:47:32 IST" duration-ms="3" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Unsupported browser: edge]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Unsupported browser: edge
+at Assessment.TestCase.setUp(TestCase.java:73)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="elPaisArticleScraper()[pri:0, instance:Assessment.TestCase@79207381]" started-at="2025-11-13T22:47:32 IST" name="elPaisArticleScraper" finished-at="2025-11-13T22:47:32 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Unsupported browser: edge]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Unsupported browser: edge
+at Assessment.TestCase.setUp(TestCase.java:73)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+at org.testng.TestRunner.run(TestRunner.java:610)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- elPaisArticleScraper -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assessment.TestCase@79207381]" started-at="2025-11-13T22:47:32 IST" name="tearDown" finished-at="2025-11-13T22:47:32 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Assessment.TestCase -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- CrossBrowserSequentialSuite -->
+</testng-results>

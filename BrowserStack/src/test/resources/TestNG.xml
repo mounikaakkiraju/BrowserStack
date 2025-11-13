@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserSequentialSuite" parallel="false">
+
+    <!-- ✅ Chrome Execution -->
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome" />
+        <parameter name="os" value="Windows 10" />
+        <parameter name="isRemote" value="false" />
+        <classes>
+            <class name="Assessment.TestCase" />
+        </classes>
+    </test>
+
+    <!-- ✅ Firefox Execution -->
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox" />
+        <parameter name="os" value="Windows 10" />
+        <parameter name="isRemote" value="false" />
+        <classes>
+            <class name="Assessment.TestCase" />
+        </classes>
+    </test>
+
+    <!-- ✅ Edge Execution -->
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge" />
+        <parameter name="os" value="Windows 10" />
+        <parameter name="isRemote" value="false" />
+        <classes>
+            <class name="Assessment.TestCase" />
+        </classes>
+    </test>
+
+</suite>
