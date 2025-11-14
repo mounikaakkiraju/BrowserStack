@@ -43,8 +43,8 @@ public class TestCase
 	            String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
 
 	            if (username == null || accessKey == null) {
-	                username = "YOUR_BROWSERSTACK_USERNAME";   // Replace with your BrowserStack username
-	                accessKey = "YOUR_BROWSERSTACK_ACCESS_KEY"; // Replace with your BrowserStack access key
+	                username = "YOUR_BROWSERSTACK_USERNAME";  
+	                accessKey = "YOUR_BROWSERSTACK_ACCESS_KEY"; 
 	            }
 
 	            MutableCapabilities caps = new MutableCapabilities();
@@ -102,7 +102,7 @@ public class TestCase
 	            List<WebElement> articles = driver.findElements(By.tagName("article"));
 	            int count = Math.min(articles.size(), 5);
 
-	            System.out.println("\n🔹 Found Articles: " + count);
+	            System.out.println("\n Found Articles: " + count);
 	            System.out.println("--------------------------------------------------");
 
 	            List<String> translatedTitles = new ArrayList<>();
@@ -179,6 +179,7 @@ public class TestCase
 	                    String translated = translateText(title);
 	                    String decodedTitle = URLDecoder.decode(translated, StandardCharsets.UTF_8);
 	                    translatedTitles.add(decodedTitle);
+						System.out.println();
 	                    System.out.println("Translated Title to English: " + decodedTitle);
 	                    System.out.println("--------------------------------------------------");
 
