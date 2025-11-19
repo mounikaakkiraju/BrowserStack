@@ -8,24 +8,18 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">CrossBrowserSequentialSuite</th></tr>
-<tr><td><a href="#t0">ChromeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">195,358</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">FirefoxTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">98,179</td><td></td><td></td></tr>
-<tr><td><a href="#t2">EdgeTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">24</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">293,561</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test-2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">89,640</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Default test-1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">102,273</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Default test-0</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">134,719</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">326,632</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">CrossBrowserSequentialSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Assessment.TestCase</td><td><a href="#m0">elPaisArticleScraper</a></td><td rowspan="1">1763053962006</td><td rowspan="1">191732</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">FirefoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Assessment.TestCase</td><td><a href="#m1">elPaisArticleScraper</a></td><td rowspan="1">1763054159563</td><td rowspan="1">89237</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">EdgeTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Assessment.TestCase</td><td><a href="#m2">setUp</a></td><td rowspan="1">1763054252385</td><td rowspan="1">3</td></tr><tr><th colspan="4">EdgeTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">Assessment.TestCase</td><td><a href="#m3">tearDown</a></td><td rowspan="1">1763054252403</td><td rowspan="1">0</td></tr><tr><th colspan="4">EdgeTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Assessment.TestCase</td><td><a href="#m4">elPaisArticleScraper</a></td><td rowspan="1">1763054252398</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test-2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Assessment.TestCase</td><td><a href="#m0">elPaisArticleScraper</a></td><td rowspan="1">1763567516003</td><td rowspan="1">64094</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Default test-1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Assessment.TestCase</td><td><a href="#m1">elPaisArticleScraper</a></td><td rowspan="1">1763567503067</td><td rowspan="1">89305</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Default test-0 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Assessment.TestCase</td><td><a href="#m2">elPaisArticleScraper</a></td><td rowspan="1">1763567504102</td><td rowspan="1">120798</td></tr></tbody>
 </table>
-<h2>ChromeTest</h2><h3 id="m0">Assessment.TestCase#elPaisArticleScraper</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>FirefoxTest</h2><h3 id="m1">Assessment.TestCase#elPaisArticleScraper</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>EdgeTest</h2><h3 id="m2">Assessment.TestCase#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>edge</td><td>Windows 10</td><td>false</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.IllegalArgumentException: Unsupported browser: edge
-	at Assessment.TestCase.setUp(TestCase.java:73)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Assessment.TestCase#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Assessment.TestCase#elPaisArticleScraper</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Unsupported browser: edge
-	at Assessment.TestCase.setUp(TestCase.java:73)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test-2</h2><h3 id="m0">Assessment.TestCase#elPaisArticleScraper</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test-1</h2><h3 id="m1">Assessment.TestCase#elPaisArticleScraper</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test-0</h2><h3 id="m2">Assessment.TestCase#elPaisArticleScraper</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

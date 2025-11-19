@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 13 22:37:58 IST 2025</td>
+<td>Started on:</td><td>Wed Nov 19 21:06:25 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>168 seconds (168468 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38466 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,9 +77,126 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Assessment.TestCase.elPaisArticleScraper()'><b>elPaisArticleScraper</b><br>Test class: Assessment.TestCase</td>
-<td></td>
-<td>165</td>
-<td>Assessment.TestCase@72bc6553</td></tr>
+<td><div><pre>java.lang.RuntimeException: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;c_k  &quot; href=&quot;https://elpais.com/opinion/editoriales/&quot; data-mrf-link=&quot;https://elpais.com/opinion/editoriales/&quot; cmp-ltrk=&quot;portada_apertura&quot; cmp-ltrk-idx=&quot;0&quot; mrfobservableid=&quot;e0a2863c-d24b-4503-9c23-669647c4c34d&quot;&gt;...&lt;/a&gt; is not clickable at point (232, 5). Other element would receive the click: &lt;div id=&quot;didomi-notice&quot; data-testid=&quot;notice&quot; class=&quot;didomi-regular-notice didomi-banner-notice-info-type didomi-notice-banner shape-banner top didomi-regular-notice-with-data-processing didomi-support-full-height&quot; style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border-color: rgb(1, 108, 162);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.60)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [629c10a4b09dbb4029d7bc4652ee4f10f191f677, clickElement {id=f.FAAD76E4D8FB5B3EB74B2A31BD0512F5.d.14ADA7E66B068976F2F45D677D58B954.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.59 (4b8153ab58d3..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7370}, goog:loggingPrefs: {browser: SEVERE, driver: ALL, performance: ALL, server: ALL}, goog:processID: 5140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[RemoteWebDriver: chrome on Windows XP (629c10a4b09dbb4029d7bc4652ee4f10f191f677)] -&gt; tag name: article]] -&gt; tag name: a]
+Session ID: 629c10a4b09dbb4029d7bc4652ee4f10f191f677
+	at Assessment.TestCase.elPaisArticleScraper(TestCase.java:120)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;c_k  &quot; href=&quot;https://elpais.com/opinion/editoriales/&quot; data-mrf-link=&quot;https://elpais.com/opinion/editoriales/&quot; cmp-ltrk=&quot;portada_apertura&quot; cmp-ltrk-idx=&quot;0&quot; mrfobservableid=&quot;e0a2863c-d24b-4503-9c23-669647c4c34d&quot;&gt;...&lt;/a&gt; is not clickable at point (232, 5). Other element would receive the click: &lt;div id=&quot;didomi-notice&quot; data-testid=&quot;notice&quot; class=&quot;didomi-regular-notice didomi-banner-notice-info-type didomi-notice-banner shape-banner top didomi-regular-notice-with-data-processing didomi-support-full-height&quot; style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border-color: rgb(1, 108, 162);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.60)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [629c10a4b09dbb4029d7bc4652ee4f10f191f677, clickElement {id=f.FAAD76E4D8FB5B3EB74B2A31BD0512F5.d.14ADA7E66B068976F2F45D677D58B954.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.59 (4b8153ab58d3..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7370}, goog:loggingPrefs: {browser: SEVERE, driver: ALL, performance: ALL, server: ALL}, goog:processID: 5140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[RemoteWebDriver: chrome on Windows XP (629c10a4b09dbb4029d7bc4652ee4f10f191f677)] -&gt; tag name: article]] -&gt; tag name: a]
+Session ID: 629c10a4b09dbb4029d7bc4652ee4f10f191f677
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Assessment.TestCase.elPaisArticleScraper(TestCase.java:91)
+	... 26 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace499609505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499609505'><pre>java.lang.RuntimeException: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;c_k  &quot; href=&quot;https://elpais.com/opinion/editoriales/&quot; data-mrf-link=&quot;https://elpais.com/opinion/editoriales/&quot; cmp-ltrk=&quot;portada_apertura&quot; cmp-ltrk-idx=&quot;0&quot; mrfobservableid=&quot;e0a2863c-d24b-4503-9c23-669647c4c34d&quot;&gt;...&lt;/a&gt; is not clickable at point (232, 5). Other element would receive the click: &lt;div id=&quot;didomi-notice&quot; data-testid=&quot;notice&quot; class=&quot;didomi-regular-notice didomi-banner-notice-info-type didomi-notice-banner shape-banner top didomi-regular-notice-with-data-processing didomi-support-full-height&quot; style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border-color: rgb(1, 108, 162);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.60)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [629c10a4b09dbb4029d7bc4652ee4f10f191f677, clickElement {id=f.FAAD76E4D8FB5B3EB74B2A31BD0512F5.d.14ADA7E66B068976F2F45D677D58B954.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.59 (4b8153ab58d3..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7370}, goog:loggingPrefs: {browser: SEVERE, driver: ALL, performance: ALL, server: ALL}, goog:processID: 5140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[RemoteWebDriver: chrome on Windows XP (629c10a4b09dbb4029d7bc4652ee4f10f191f677)] -&gt; tag name: article]] -&gt; tag name: a]
+Session ID: 629c10a4b09dbb4029d7bc4652ee4f10f191f677
+	at Assessment.TestCase.elPaisArticleScraper(TestCase.java:120)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;c_k  &quot; href=&quot;https://elpais.com/opinion/editoriales/&quot; data-mrf-link=&quot;https://elpais.com/opinion/editoriales/&quot; cmp-ltrk=&quot;portada_apertura&quot; cmp-ltrk-idx=&quot;0&quot; mrfobservableid=&quot;e0a2863c-d24b-4503-9c23-669647c4c34d&quot;&gt;...&lt;/a&gt; is not clickable at point (232, 5). Other element would receive the click: &lt;div id=&quot;didomi-notice&quot; data-testid=&quot;notice&quot; class=&quot;didomi-regular-notice didomi-banner-notice-info-type didomi-notice-banner shape-banner top didomi-regular-notice-with-data-processing didomi-support-full-height&quot; style=&quot;background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border-color: rgb(1, 108, 162);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.60)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [629c10a4b09dbb4029d7bc4652ee4f10f191f677, clickElement {id=f.FAAD76E4D8FB5B3EB74B2A31BD0512F5.d.14ADA7E66B068976F2F45D677D58B954.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.59 (4b8153ab58d3..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7370}, goog:loggingPrefs: {browser: SEVERE, driver: ALL, performance: ALL, server: ALL}, goog:processID: 5140, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[RemoteWebDriver: chrome on Windows XP (629c10a4b09dbb4029d7bc4652ee4f10f191f677)] -&gt; tag name: article]] -&gt; tag name: a]
+Session ID: 629c10a4b09dbb4029d7bc4652ee4f10f191f677
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Assessment.TestCase.elPaisArticleScraper(TestCase.java:91)
+	... 26 more
+</pre></div></td>
+<td>21</td>
+<td>Assessment.TestCase@1a1da881</td></tr>
 </table><p>
 </body>
 </html>

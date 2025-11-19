@@ -2,6 +2,7 @@ package Assessment;
 
 
 import org.openqa.selenium.*;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -34,17 +35,17 @@ public class TestCase
 	                      @org.testng.annotations.Optional("Windows 10") String os,
 	                      @org.testng.annotations.Optional("false") String isRemote) throws Exception {
 
-	        System.out.println("\n===============================================");
+	        System.out.println("===============================================");
 	        System.out.println("===== " + browser.toUpperCase() + " Execution Started =====");
-	        System.out.println("===============================================\n");
+	        System.out.println("===============================================");
 
 	        if (isRemote.equalsIgnoreCase("true")) {
 	            String username = System.getenv("BROWSERSTACK_USERNAME");
 	            String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
 
 	            if (username == null || accessKey == null) {
-	                username = "YOUR_BROWSERSTACK_USERNAME";   // Replace with your BrowserStack username
-	                accessKey = "YOUR_BROWSERSTACK_ACCESS_KEY"; // Replace with your BrowserStack access key
+	                username = "BROWSERSTACK_USERNAME";   
+	                accessKey = "BROWSERSTACK_ACCESS_KEY"; 
 	            }
 
 	            MutableCapabilities caps = new MutableCapabilities();
@@ -102,7 +103,7 @@ public class TestCase
 	            List<WebElement> articles = driver.findElements(By.tagName("article"));
 	            int count = Math.min(articles.size(), 5);
 
-	            System.out.println("\n🔹 Found Articles: " + count);
+	            System.out.println(" Found Articles: " + count);
 	            System.out.println("--------------------------------------------------");
 
 	            List<String> translatedTitles = new ArrayList<>();
@@ -179,6 +180,7 @@ public class TestCase
 	                    String translated = translateText(title);
 	                    String decodedTitle = URLDecoder.decode(translated, StandardCharsets.UTF_8);
 	                    translatedTitles.add(decodedTitle);
+	                    System.out.println();
 	                    System.out.println("Translated Title to English: " + decodedTitle);
 	                    System.out.println("--------------------------------------------------");
 
